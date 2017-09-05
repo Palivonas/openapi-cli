@@ -15,10 +15,32 @@
           }
         }
       },
-      "patch": {
-        "summary": "Update Pizza",
-        "description": "Update an existing Pizza.",
-        "operationId": "update",
+      "delete": {
+        "summary": "Delete a Pizza by ID",
+        "description": "Delete an existing Pizza.",
+        "operationId": "delete",
+        "parameters": []
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "List Pizzas",
+        "description": "List all available pizzas.",
+        "operationId": "list",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "List of Pizzas",
+            "schema": {
+              "$ref": "#/definitions/Pizza List"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create Pizza",
+        "description": "Create a new Pizza.",
+        "operationId": "create",
         "parameters": [],
         "responses": {
           "200": {
@@ -28,6 +50,22 @@
             }
           }
         }
+      }
+    },
+    "/full/{id}": {
+      "get": {
+        "operationId": "My full Pizza",
+        "summary": "full pizza",
+        "description": "full pizza",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "description": "id",
+            "in": "path"
+          }
+        ],
+        "responses": {}
       }
     }
   },

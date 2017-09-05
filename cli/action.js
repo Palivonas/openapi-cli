@@ -11,11 +11,11 @@ const actionQuestions = [
 				name: 'add a CRUD Route',
 				value: 'crud'
 			},
-			// {
-			// 	key: 'addCustom',
-			// 	name: 'add a Custom Route',
-			// 	value: 'custom'
-			// },
+			{
+				key: 'addCustom',
+				name: 'add a Custom Route',
+				value: 'custom'
+			},
 			{
 				key: 'addModel',
 				name: 'add a Model Definitions',
