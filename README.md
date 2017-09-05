@@ -1,7 +1,7 @@
-# OpenAPI Cli
+# OpenAPI CLI
 
-Clone the repo and run npm install
+Command line tool for manipluating openapi spec files
 
-`node cli pizza`
+`openapi-cli pizza`
 
-follow the questions
+This is alpha software, do not use in production
