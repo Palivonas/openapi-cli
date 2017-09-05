@@ -1,0 +1,54 @@
+{
+  "paths": {
+    "/{id}": {
+      "get": {
+        "summary": "Fetch a Pizza by ID",
+        "description": "Fetch a pizza by ID.",
+        "operationId": "getById",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "A Pizza",
+            "schema": {
+              "$ref": "#/definitions/Pizza"
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "Update Pizza",
+        "description": "Update an existing Pizza.",
+        "operationId": "update",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Created Pizza",
+            "schema": {
+              "$ref": "#/definitions/Pizza"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Pizza": {
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "Pizza List": {
+      "properties": {
+        "count": {
+          "type": "number"
+        },
+        "items": {
+          "type": "object",
+          "$ref": "#/definitions/Pizza"
+        }
+      }
+    }
+  }
+}
