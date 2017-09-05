@@ -1,13 +1,13 @@
 {
   "name": "@oneflow/openapi-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin":{
-    "openapi-cli": "index"
+    "openapi-cli": "./index.js"
   },
   "repository": {
     "type": "git",
